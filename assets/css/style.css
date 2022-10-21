@@ -117,9 +117,9 @@ nav.navbar.bootsnav {
 .wrap-sticky nav.navbar.bootsnav.sticked {background-color: #FFF3E2;box-shadow: 0 2px 5px rgba(0,0,0,.2);}
 /*.navbar-brand*/
  
-    .logo{
+#logo-navbar-brand{
         height: 200%;
-        object-fit: scale-down;
+        object-fit: contain;
         
         
     }
