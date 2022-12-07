@@ -1,0 +1,40 @@
+create database sinmkt1;
+use sinmkt1;
+
+create table admin(
+id int not null auto_increment primary key,
+login varchar(100),
+password text
+);
+
+create table newArrivals(
+id_newArrivals int not null auto_increment,
+primary key(id_newArrivals),
+nom varchar(100),
+prix float,
+image blob,
+description text,
+category varchar(100)
+);
+
+create table features (
+id_features int not null auto_increment,
+primary key(id_features),
+nom varchar(100),
+prix float,
+image blob,
+reviewsAvrg float,
+reviewsCount int,
+description text,
+category varchar(100)
+);
+
+create table blog (
+id_blog int not null auto_increment,
+primary key(id_blog),
+title varchar(100),
+image blob,
+article text,
+author varchar(100),
+date_post date
+);
