@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="form.css">
-    <link rel="stylesheet" href="style-home-copy.css">
+    <link rel="stylesheet" href="views/assets/form.css">
+    <link rel="stylesheet" href="views/assets/style-home-copy.css">
     
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
@@ -19,40 +19,7 @@
 <body>
     
     
-    <nav class="menu">
-        <div class="logo">
-        <img class="brown" src="./logo/dark orange.png" alt="">
-        <img class="orange" src="./logo/Orange.png" alt="">
-        </div>
-        <ul class="titles">
-            <div class="mini-menu" id="mini-menu">
-                <figure class="line"></figure>
-                <figure class="line"></figure>
-                <figure class="line"></figure>
-            </div>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="arrivals.html">New Arrival</a></li>
-            <li><a href="features.html">Features</a></li>
-            <li><a href="BLOG.html">Blog</a></li>
-            <li><a href="#" id="open-form-container">Contact</a></li>
-            <!-- <li><a href="form.html">Contact</a></li> -->
-        </ul>
-        <div class="icons">
-            <i class="fa-solid fa-magnifying-glass" id="test"></i>
-            <i class="fa-solid fa-user"></i>
-            <i class="fa-solid fa-gear"></i>
-
-        </div>
-    </nav>
-    <ul class="titles-mobile" id="titles-mobile">
-       
-        <li><a href="index.html">Home</a></li>
-        <li><a href="arrivals.html">New Arrival</a></li>
-        <li><a href="features.html">Features</a></li>
-        <li><a href="BLOG.html">Blog</a></li>
-        <li><a href="#" >Contact</a></li>
-        <!-- <li><a href="form.html">Contact</a></li> -->
-    </ul>
+<?php require_once 'views/pages/nav.php' ?>
 
     <div class="slider-section">
         <figure>
