@@ -12,38 +12,7 @@
     <title>Contact</title>
 </head>
 <body>
-    <nav class="menu">
-        <div class="logo">
-        <img class="brown" src="./logo/dark orange.png" alt="">
-        <img class="orange" src="./logo/Orange.png" alt="">
-        </div>
-        <ul class="titles">
-            <div class="mini-menu" id="mini-menu">
-                <figure class="line"></figure>
-                <figure class="line"></figure>
-                <figure class="line"></figure>
-            </div>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="arrivals.html">New Arrival</a></li>
-            <li><a href="features.html">Features</a></li>
-            <li><a href="BLOG.html">Blog</a></li>
-            <li><a href="form.html">Contact</a></li>
-        </ul>
-        <div class="icons">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <i class="fa-solid fa-user"></i>
-            <i class="fa-solid fa-gear"></i>
-
-        </div>
-    </nav>
-    <ul class="titles-mobile" id="titles-mobile">
-       
-        <li><a href="index.html">Home</a></li>
-        <li><a href="arrivals.html">New Arrival</a></li>
-        <li><a href="features.html">Features</a></li>
-        <li><a href="BLOG.html">Blog</a></li>
-        <li>Contact</li>
-    </ul>
+<?php require_once 'nav.php' ?>
     <main class="container form">
         <div class="horizontal">
             <figure><img src="./logo/Unsdvsvtitled-1.png" alt="" srcset=""></figure>
