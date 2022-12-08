@@ -16,7 +16,7 @@
             <li><a href="arrivals.php">New Arrival</a></li>
             <li><a href="features.php">Features</a></li>
             <li><a href="BLOG.php">Blog</a></li>
-            <li><a href="#" id="open-form-container">Contact</a></li>
+            <li><a href="test.php" id="open-form-container">test</a></li>
             <!-- <li><a href="form.php">Contact</a></li> -->
         </ul>
         <div class="icons">

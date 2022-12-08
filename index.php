@@ -1,5 +1,5 @@
 <?php 
-
+session_start();
 define("PROJ_DIR", dirname(__FILE__));
 include_once PROJ_DIR . "/classes/loginModel.class.php";
 
@@ -12,13 +12,10 @@ include_once PROJ_DIR . "/classes/loginModel.class.php";
 $loginM = new signupModel();
 
 if(isset($_GET['a'])){
+
     $action=$_GET['a'];
     $loginM->$action();
     
 }
 
-        
-
     //$loginM->login($login,$password);
-
-
