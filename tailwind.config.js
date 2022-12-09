@@ -1,8 +1,24 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./views/**/*.{html,js,php}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+      'norange': '#EA9010',
+      'worange': '#FFF3E2',
+      'dorange': '#151513',
+      'ngray': '#C9C9C9',
+      'wgray': '#F8F9FC',
+      'dgray': '#444545',
+      },
+      /* shadow: {
+        'xs': '0 0 0 1px rgba(0 0 0 / 5%))',
+      } */
+    },
   },
   plugins: [],
 }
+
+
