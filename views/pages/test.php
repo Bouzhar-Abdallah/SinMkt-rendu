@@ -18,9 +18,42 @@
   <?php require_once 'nav.php' ?>
  
 <div class="flex w-full">
-    <div class="w-72 h-screen shadow-md bg-white">
-        <!-- left bar -->
+    <div class="w-72 py-4 h-screen text-dgray shadow-md bg-white">
+        <ul >
+            <li class="relative px-6 py-3">
+                <a href="" class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
+                    <img src="../icons/home.svg" alt="" class="w-5 h-5">
+                    <span class="ml-4">new arrivals</span>
+                </a>
+            </li>
+            <li class="relative px-6 py-3">
+                <a href="" class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
+                    <img src="../icons/home.svg" alt="" class="w-5 h-5">
+                    <span class="ml-4">new arrivals</span>
+                </a>
+            </li>
+            <li class="relative px-6 py-3">
+                <a href="" class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
+                    <img src="../icons/home.svg" alt="" class="w-5 h-5">
+                    <span class="ml-4">new arrivals</span>
+                </a>
+            </li>
+            <li class="relative px-6 py-3">
+                <a href="" class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
+                    <img src="../icons/home.svg" alt="" class="w-5 h-5">
+                    <span class="ml-4">new arrivals</span>
+                </a>
+            </li>
+            <li class="relative px-6 py-3">
+                <a href="" class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
+                    <img src="../icons/home.svg" alt="" class="w-5 h-5">
+                    <span class="ml-4">new arrivals</span>
+                </a>
+            </li>
+            
+        </ul>
     </div>
+    <!-- left bar end -->
     <div class="h-full w-full overflow-y-auto">
         <div class="container w-full px-6 mx-auto grid">
             <h1 class="my-6 text-2xl font-semibold text-gray-700 ">
@@ -87,10 +120,10 @@
                     <table class="w-full whitespace-no-wrap">
                         <thead>
                         <tr class="text-xs font-semibold tracking-wide text-left text-black uppercase border-b  bg-wgray">
-                            <th class="px-4 py-3">test</th>
-                            <th class="px-4 py-3">test</th>
-                            <th class="px-4 py-3">test</th>
-                            <th class="px-4 py-3">test</th>
+                            <th class="px-4 py-3">produit</th>
+                            <th class="px-4 py-3">prix</th>
+                            <th class="px-4 py-3">category</th>
+                            <th class="px-4 py-3">auqntity</th>
                         </tr>
                         </thead>
                         <tbody class="bg-white divide-y ">
