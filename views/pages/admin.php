@@ -1,4 +1,13 @@
+<?php 
+ if(!isset($_SESSION)) 
+ { 
+     session_start();
+     if ($_SESSION["login"] !== 'admin') {
+        header('Location: home.php');
+    }
+ } 
 
+?>
 
 <!doctype html>
 <html lang="en">

@@ -40,7 +40,7 @@ class signupModel extends dbh{
                     $_SESSION["login"] = 'admin';
                     header('Location: ./views/pages/home.php');
                 }else {
-                    header('Location: ./views/pages/test.php');
+                    header('Location: ./views/pages/home.php');
                 }
             }
             else {

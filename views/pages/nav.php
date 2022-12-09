@@ -1,5 +1,9 @@
     <?php 
-    session_start();
+    if(!isset($_SESSION)) 
+    { 
+        session_start();
+        
+    } 
     ?>
     <nav class="menu">
         <div class="logo">
@@ -16,7 +20,7 @@
             <li><a href="arrivals.php">New Arrival</a></li>
             <li><a href="features.php">Features</a></li>
             <li><a href="BLOG.php">Blog</a></li>
-            <li><a href="test.php" id="open-form-container">test</a></li>
+            <li><a href="#" id="open-form-container">contact</a></li>
             <!-- <li><a href="form.php">Contact</a></li> -->
         </ul>
         <div class="icons">
@@ -27,7 +31,7 @@
                     if(isset($_SESSION["login"])){
                         if($_SESSION["login"] === 'admin') 
                         {
-                            echo '<i class="fa-solid fa-gear"></i>
+                            echo '<a href="admin.php"><i class="fa-solid fa-gear"></i></a>
                             
                             <a href="../../index.php?a=logout"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>';
                         }
