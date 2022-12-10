@@ -26,8 +26,9 @@
   <body>
   <?php require_once 'nav.php' ?>
  
-<div class="flex w-full">
-    <div class="w-72 py-4 h-screen text-dgray shadow-md bg-white">
+<div class="flex fixed top-0 pt-14 h-screen  w-full">
+    <div class="sticky top-0 w-64 py-4 h-full text-dgray shadow-md bg-white">
+        
         <ul >
             <li class="relative px-6 py-3">
                 <a href="" class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
@@ -63,7 +64,7 @@
         </ul>
     </div>
     <!-- left bar end -->
-    <div class="h-full w-full overflow-y-auto">
+    <div class=" w-full h-full overflow-scroll overflow-y-auto">
         <div class="container w-full px-6 mx-auto grid">
             <h1 class="my-6 text-2xl font-semibold text-gray-700 ">
                 dashboard
@@ -136,6 +137,278 @@
                         </tr>
                         </thead>
                         <tbody class="bg-white divide-y ">
+                            <tr class="text-dgray">
+                                <td class="px-4 py-3">
+                                    <div class="flex items-center text-sm">
+                                        <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
+                                            <img src="../icons/home.svg" alt="" srcset="">
+                                        </div>
+                                        <div >
+                                            <p class="font-semibold">produit</p>
+                                            <p class="text-xs text-ngray ">vategory</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-4 py-3">test</td>
+                                <td class="px-4 py-3">test</td>
+                                <td class="px-4 py-3">test</td>
+                            </tr>
+                            <tr class="text-dgray">
+                                <td class="px-4 py-3">
+                                    <div class="flex items-center text-sm">
+                                        <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
+                                            <img src="../icons/home.svg" alt="" srcset="">
+                                        </div>
+                                        <div >
+                                            <p class="font-semibold">produit</p>
+                                            <p class="text-xs text-ngray ">vategory</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-4 py-3">test</td>
+                                <td class="px-4 py-3">test</td>
+                                <td class="px-4 py-3">test</td>
+                            </tr>
+                            <tr class="text-dgray">
+                                <td class="px-4 py-3">
+                                    <div class="flex items-center text-sm">
+                                        <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
+                                            <img src="../icons/home.svg" alt="" srcset="">
+                                        </div>
+                                        <div >
+                                            <p class="font-semibold">produit</p>
+                                            <p class="text-xs text-ngray ">vategory</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-4 py-3">test</td>
+                                <td class="px-4 py-3">test</td>
+                                <td class="px-4 py-3">test</td>
+                            </tr>
+                            <tr class="text-dgray">
+                                <td class="px-4 py-3">
+                                    <div class="flex items-center text-sm">
+                                        <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
+                                            <img src="../icons/home.svg" alt="" srcset="">
+                                        </div>
+                                        <div >
+                                            <p class="font-semibold">produit</p>
+                                            <p class="text-xs text-ngray ">vategory</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-4 py-3">test</td>
+                                <td class="px-4 py-3">test</td>
+                                <td class="px-4 py-3">test</td>
+                            </tr>
+                            <tr class="text-dgray">
+                                <td class="px-4 py-3">
+                                    <div class="flex items-center text-sm">
+                                        <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
+                                            <img src="../icons/home.svg" alt="" srcset="">
+                                        </div>
+                                        <div >
+                                            <p class="font-semibold">produit</p>
+                                            <p class="text-xs text-ngray ">vategory</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-4 py-3">test</td>
+                                <td class="px-4 py-3">test</td>
+                                <td class="px-4 py-3">test</td>
+                            </tr>
+                            <tr class="text-dgray">
+                                <td class="px-4 py-3">
+                                    <div class="flex items-center text-sm">
+                                        <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
+                                            <img src="../icons/home.svg" alt="" srcset="">
+                                        </div>
+                                        <div >
+                                            <p class="font-semibold">produit</p>
+                                            <p class="text-xs text-ngray ">vategory</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-4 py-3">test</td>
+                                <td class="px-4 py-3">test</td>
+                                <td class="px-4 py-3">test</td>
+                            </tr>
+                            <tr class="text-dgray">
+                                <td class="px-4 py-3">
+                                    <div class="flex items-center text-sm">
+                                        <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
+                                            <img src="../icons/home.svg" alt="" srcset="">
+                                        </div>
+                                        <div >
+                                            <p class="font-semibold">produit</p>
+                                            <p class="text-xs text-ngray ">vategory</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-4 py-3">test</td>
+                                <td class="px-4 py-3">test</td>
+                                <td class="px-4 py-3">test</td>
+                            </tr>
+                            <tr class="text-dgray">
+                                <td class="px-4 py-3">
+                                    <div class="flex items-center text-sm">
+                                        <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
+                                            <img src="../icons/home.svg" alt="" srcset="">
+                                        </div>
+                                        <div >
+                                            <p class="font-semibold">produit</p>
+                                            <p class="text-xs text-ngray ">vategory</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-4 py-3">test</td>
+                                <td class="px-4 py-3">test</td>
+                                <td class="px-4 py-3">test</td>
+                            </tr>
+                            <tr class="text-dgray">
+                                <td class="px-4 py-3">
+                                    <div class="flex items-center text-sm">
+                                        <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
+                                            <img src="../icons/home.svg" alt="" srcset="">
+                                        </div>
+                                        <div >
+                                            <p class="font-semibold">produit</p>
+                                            <p class="text-xs text-ngray ">vategory</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-4 py-3">test</td>
+                                <td class="px-4 py-3">test</td>
+                                <td class="px-4 py-3">test</td>
+                            </tr>
+                            <tr class="text-dgray">
+                                <td class="px-4 py-3">
+                                    <div class="flex items-center text-sm">
+                                        <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
+                                            <img src="../icons/home.svg" alt="" srcset="">
+                                        </div>
+                                        <div >
+                                            <p class="font-semibold">produit</p>
+                                            <p class="text-xs text-ngray ">vategory</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-4 py-3">test</td>
+                                <td class="px-4 py-3">test</td>
+                                <td class="px-4 py-3">test</td>
+                            </tr>
+                            <tr class="text-dgray">
+                                <td class="px-4 py-3">
+                                    <div class="flex items-center text-sm">
+                                        <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
+                                            <img src="../icons/home.svg" alt="" srcset="">
+                                        </div>
+                                        <div >
+                                            <p class="font-semibold">produit</p>
+                                            <p class="text-xs text-ngray ">vategory</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-4 py-3">test</td>
+                                <td class="px-4 py-3">test</td>
+                                <td class="px-4 py-3">test</td>
+                            </tr>
+                            <tr class="text-dgray">
+                                <td class="px-4 py-3">
+                                    <div class="flex items-center text-sm">
+                                        <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
+                                            <img src="../icons/home.svg" alt="" srcset="">
+                                        </div>
+                                        <div >
+                                            <p class="font-semibold">produit</p>
+                                            <p class="text-xs text-ngray ">vategory</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-4 py-3">test</td>
+                                <td class="px-4 py-3">test</td>
+                                <td class="px-4 py-3">test</td>
+                            </tr>
+                            <tr class="text-dgray">
+                                <td class="px-4 py-3">
+                                    <div class="flex items-center text-sm">
+                                        <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
+                                            <img src="../icons/home.svg" alt="" srcset="">
+                                        </div>
+                                        <div >
+                                            <p class="font-semibold">produit</p>
+                                            <p class="text-xs text-ngray ">vategory</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-4 py-3">test</td>
+                                <td class="px-4 py-3">test</td>
+                                <td class="px-4 py-3">test</td>
+                            </tr>
+                            <tr class="text-dgray">
+                                <td class="px-4 py-3">
+                                    <div class="flex items-center text-sm">
+                                        <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
+                                            <img src="../icons/home.svg" alt="" srcset="">
+                                        </div>
+                                        <div >
+                                            <p class="font-semibold">produit</p>
+                                            <p class="text-xs text-ngray ">vategory</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-4 py-3">test</td>
+                                <td class="px-4 py-3">test</td>
+                                <td class="px-4 py-3">test</td>
+                            </tr>
+                            <tr class="text-dgray">
+                                <td class="px-4 py-3">
+                                    <div class="flex items-center text-sm">
+                                        <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
+                                            <img src="../icons/home.svg" alt="" srcset="">
+                                        </div>
+                                        <div >
+                                            <p class="font-semibold">produit</p>
+                                            <p class="text-xs text-ngray ">vategory</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-4 py-3">test</td>
+                                <td class="px-4 py-3">test</td>
+                                <td class="px-4 py-3">test</td>
+                            </tr>
+                            <tr class="text-dgray">
+                                <td class="px-4 py-3">
+                                    <div class="flex items-center text-sm">
+                                        <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
+                                            <img src="../icons/home.svg" alt="" srcset="">
+                                        </div>
+                                        <div >
+                                            <p class="font-semibold">produit</p>
+                                            <p class="text-xs text-ngray ">vategory</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-4 py-3">test</td>
+                                <td class="px-4 py-3">test</td>
+                                <td class="px-4 py-3">test</td>
+                            </tr>
+                            <tr class="text-dgray">
+                                <td class="px-4 py-3">
+                                    <div class="flex items-center text-sm">
+                                        <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
+                                            <img src="../icons/home.svg" alt="" srcset="">
+                                        </div>
+                                        <div >
+                                            <p class="font-semibold">produit</p>
+                                            <p class="text-xs text-ngray ">vategory</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-4 py-3">test</td>
+                                <td class="px-4 py-3">test</td>
+                                <td class="px-4 py-3">test</td>
+                            </tr>
                             <tr class="text-dgray">
                                 <td class="px-4 py-3">
                                     <div class="flex items-center text-sm">

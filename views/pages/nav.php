@@ -5,18 +5,18 @@
         
     } 
     ?>
-    <nav class="menu">
+    <nav class="menu ">
         <div class="logo">
         <img class="brown" src="../images/logo/dark orange.png" alt="">
         <img class="orange" src="../images/logo/Orange.png" alt="">
         </div>
-        <ul class="titles">
+        <ul class="font-medium uppercase" class="titles">
             <div class="mini-menu" id="mini-menu">
                 <figure class="line"></figure>
                 <figure class="line"></figure>
                 <figure class="line"></figure>
             </div>
-            <li><a href="home.php">home</a></li>
+            <li class="" ><a href="home.php">home</a></li>
             <li><a href="arrivals.php">New Arrival</a></li>
             <li><a href="features.php">Features</a></li>
             <li><a href="BLOG.php">Blog</a></li>
