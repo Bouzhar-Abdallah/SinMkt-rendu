@@ -39,27 +39,19 @@
             <li class="relative px-6 py-3">
                 <a href="" class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
                     <img src="../icons/home.svg" alt="" class="w-5 h-5">
-                    <span class="ml-4">new arrivals</span>
+                    <span class="ml-4">Features</span>
                 </a>
             </li>
             <li class="relative px-6 py-3">
                 <a href="" class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
                     <img src="../icons/home.svg" alt="" class="w-5 h-5">
-                    <span class="ml-4">new arrivals</span>
+                    <span class="ml-4">Blog</span>
                 </a>
             </li>
-            <li class="relative px-6 py-3">
-                <a href="" class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                    <img src="../icons/home.svg" alt="" class="w-5 h-5">
-                    <span class="ml-4">new arrivals</span>
-                </a>
-            </li>
-            <li class="relative px-6 py-3">
-                <a href="" class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                    <img src="../icons/home.svg" alt="" class="w-5 h-5">
-                    <span class="ml-4">new arrivals</span>
-                </a>
-            </li>
+            
+            
+            
+            
             
         </ul>
     </div>
@@ -127,21 +119,24 @@
             <!-- table -->
             <div class="w-full overflow-hidden rounded-lg shadow-md">
                 <div class="w-full overflow-x-auto">
-                    <table class="w-full whitespace-no-wrap">
+                    <table class="w-full table-fixed whitespace-no-wrap ">
                         <thead>
                         <tr class="text-xs font-semibold tracking-wide text-left text-black uppercase border-b  bg-wgray">
-                            <th class="px-4 py-3">produit</th>
-                            <th class="px-4 py-3">prix</th>
-                            <th class="px-4 py-3">category</th>
-                            <th class="px-4 py-3">auqntity</th>
+                            <th class="px-4 py-3 w-60">produit</th>
+                            <th class="px-4 py-3 w-32">prix</th>
+                            <th class="px-4 py-3 w-32">Qte en stock</th>
+                            <th class="px-4 py-3 ">Description</th>
+                            <th class="px-4 py-3 w-32">options</th>
                         </tr>
                         </thead>
                         <tbody class="bg-white divide-y ">
+                            
+                            
                             <tr class="text-dgray">
                                 <td class="px-4 py-3">
                                     <div class="flex items-center text-sm">
-                                        <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
-                                            <img src="../icons/home.svg" alt="" srcset="">
+                                        <div class="relative hidden w-12 h-12 mr-3 rounded-full md:block">
+                                            <img src="../images/collection/arrivals1.png" alt="" srcset="">
                                         </div>
                                         <div >
                                             <p class="font-semibold">produit</p>
@@ -151,280 +146,84 @@
                                 </td>
                                 <td class="px-4 py-3">test</td>
                                 <td class="px-4 py-3">test</td>
-                                <td class="px-4 py-3">test</td>
+                                <td class="px-4 py-3 h-20">Lorem ipsum dolor si</td>
+                                <td class="px-4 py-3">
+                                    <div class="flex items-center space-x-4 text-sm">
+                                        <div class=" w-6 h-6  rounded-full md:block">
+                                            <img src="../icons/add2.svg" alt="" srcset="">
+                                        </div>
+                                        <div class=" w-6 h-6  rounded-full md:block">
+                                            <img src="../icons/edit2.svg" alt="" srcset="">
+                                        </div>
+                                        <div class=" w-6 h-6   rounded-full md:block">
+                                            <img src="../icons/delete2.svg" alt="" srcset="">
+                                        </div>
+                                        
+                                    </div></td>
                             </tr>
+
                             <tr class="text-dgray">
+                                <!-- add -->
+                                <form action="test2.php" id="productInfo" name="productInfo" method="post" enctype="multipart/form-data">
                                 <td class="px-4 py-3">
                                     <div class="flex items-center text-sm">
-                                        <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
-                                            <img src="../icons/home.svg" alt="" srcset="">
+                                        <div class="relative w-12 h-12 mr-3 rounded-lg md:block">
+                                            <label class="cursor-pointer" for="image">
+                                                <img src="../icons/upload.svg" alt="" srcset="">
+                                            </label>
+                                            <input type="file" class="hidden" name="image" id="image">
                                         </div>
-                                        <div >
-                                            <p class="font-semibold">produit</p>
-                                            <p class="text-xs text-ngray ">vategory</p>
+                                        <div class="flex flex-col gap-y-2" >
+                                            
+                                        <input name="produit" class="rounded-lg p-1 w-full border-solid drop-shadow-md " placeholder="nom produit" type="text">
+                                        <input name="categorie" class="rounded-lg p-1 w-full border-solid drop-shadow-md " placeholder="categorie" type="text">
                                         </div>
                                     </div>
                                 </td>
-                                <td class="px-4 py-3">test</td>
-                                <td class="px-4 py-3">test</td>
-                                <td class="px-4 py-3">test</td>
-                            </tr>
-                            <tr class="text-dgray">
                                 <td class="px-4 py-3">
-                                    <div class="flex items-center text-sm">
-                                        <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
-                                            <img src="../icons/home.svg" alt="" srcset="">
+                                    <input name="prix" class="rounded-lg p-1 w-full border-solid drop-shadow-md " placeholder="prix" type="number">
+                                </td>
+                                <td class="px-4 py-3">
+                                    <input name="quantite" class="rounded-lg p-1 w-full border-solid drop-shadow-md " placeholder="quantité" type="number">
+                                </td>
+                                <td class="px-4 py-3 h-20">
+                                    <div class="form-group">
+                                      <textarea class="p-1 form-control rounded-lg w-full border-solid drop-shadow-md " name="" id="" placeholder="description" rows="3"></textarea>
+                                    </div>
+                                    
+                                </td>
+                                <td class="px-4 py-3">
+                                    <div class="flex items-center space-x-4 text-sm">
+                                        
+                                        <button class=" w-6 h-6  rounded-lg md:block" form="productInfo" type="submit">
+                                            <img src="../icons/save.svg" alt="" srcset="">
+                                        </button>
+                                        
+                                        <div class=" w-6 h-6  rounded-lg md:block">
+                                            <img src="../icons/cancel.svg" alt="" srcset="">
                                         </div>
-                                        <div >
-                                            <p class="font-semibold">produit</p>
-                                            <p class="text-xs text-ngray ">vategory</p>
-                                        </div>
+                                        
+                                        
                                     </div>
                                 </td>
-                                <td class="px-4 py-3">test</td>
-                                <td class="px-4 py-3">test</td>
-                                <td class="px-4 py-3">test</td>
+                            <!-- end add -->
+                            
+                            </form>
                             </tr>
-                            <tr class="text-dgray">
-                                <td class="px-4 py-3">
-                                    <div class="flex items-center text-sm">
-                                        <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
-                                            <img src="../icons/home.svg" alt="" srcset="">
-                                        </div>
-                                        <div >
-                                            <p class="font-semibold">produit</p>
-                                            <p class="text-xs text-ngray ">vategory</p>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="px-4 py-3">test</td>
-                                <td class="px-4 py-3">test</td>
-                                <td class="px-4 py-3">test</td>
-                            </tr>
-                            <tr class="text-dgray">
-                                <td class="px-4 py-3">
-                                    <div class="flex items-center text-sm">
-                                        <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
-                                            <img src="../icons/home.svg" alt="" srcset="">
-                                        </div>
-                                        <div >
-                                            <p class="font-semibold">produit</p>
-                                            <p class="text-xs text-ngray ">vategory</p>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="px-4 py-3">test</td>
-                                <td class="px-4 py-3">test</td>
-                                <td class="px-4 py-3">test</td>
-                            </tr>
-                            <tr class="text-dgray">
-                                <td class="px-4 py-3">
-                                    <div class="flex items-center text-sm">
-                                        <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
-                                            <img src="../icons/home.svg" alt="" srcset="">
-                                        </div>
-                                        <div >
-                                            <p class="font-semibold">produit</p>
-                                            <p class="text-xs text-ngray ">vategory</p>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="px-4 py-3">test</td>
-                                <td class="px-4 py-3">test</td>
-                                <td class="px-4 py-3">test</td>
-                            </tr>
-                            <tr class="text-dgray">
-                                <td class="px-4 py-3">
-                                    <div class="flex items-center text-sm">
-                                        <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
-                                            <img src="../icons/home.svg" alt="" srcset="">
-                                        </div>
-                                        <div >
-                                            <p class="font-semibold">produit</p>
-                                            <p class="text-xs text-ngray ">vategory</p>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="px-4 py-3">test</td>
-                                <td class="px-4 py-3">test</td>
-                                <td class="px-4 py-3">test</td>
-                            </tr>
-                            <tr class="text-dgray">
-                                <td class="px-4 py-3">
-                                    <div class="flex items-center text-sm">
-                                        <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
-                                            <img src="../icons/home.svg" alt="" srcset="">
-                                        </div>
-                                        <div >
-                                            <p class="font-semibold">produit</p>
-                                            <p class="text-xs text-ngray ">vategory</p>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="px-4 py-3">test</td>
-                                <td class="px-4 py-3">test</td>
-                                <td class="px-4 py-3">test</td>
-                            </tr>
-                            <tr class="text-dgray">
-                                <td class="px-4 py-3">
-                                    <div class="flex items-center text-sm">
-                                        <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
-                                            <img src="../icons/home.svg" alt="" srcset="">
-                                        </div>
-                                        <div >
-                                            <p class="font-semibold">produit</p>
-                                            <p class="text-xs text-ngray ">vategory</p>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="px-4 py-3">test</td>
-                                <td class="px-4 py-3">test</td>
-                                <td class="px-4 py-3">test</td>
-                            </tr>
-                            <tr class="text-dgray">
-                                <td class="px-4 py-3">
-                                    <div class="flex items-center text-sm">
-                                        <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
-                                            <img src="../icons/home.svg" alt="" srcset="">
-                                        </div>
-                                        <div >
-                                            <p class="font-semibold">produit</p>
-                                            <p class="text-xs text-ngray ">vategory</p>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="px-4 py-3">test</td>
-                                <td class="px-4 py-3">test</td>
-                                <td class="px-4 py-3">test</td>
-                            </tr>
-                            <tr class="text-dgray">
-                                <td class="px-4 py-3">
-                                    <div class="flex items-center text-sm">
-                                        <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
-                                            <img src="../icons/home.svg" alt="" srcset="">
-                                        </div>
-                                        <div >
-                                            <p class="font-semibold">produit</p>
-                                            <p class="text-xs text-ngray ">vategory</p>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="px-4 py-3">test</td>
-                                <td class="px-4 py-3">test</td>
-                                <td class="px-4 py-3">test</td>
-                            </tr>
-                            <tr class="text-dgray">
-                                <td class="px-4 py-3">
-                                    <div class="flex items-center text-sm">
-                                        <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
-                                            <img src="../icons/home.svg" alt="" srcset="">
-                                        </div>
-                                        <div >
-                                            <p class="font-semibold">produit</p>
-                                            <p class="text-xs text-ngray ">vategory</p>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="px-4 py-3">test</td>
-                                <td class="px-4 py-3">test</td>
-                                <td class="px-4 py-3">test</td>
-                            </tr>
-                            <tr class="text-dgray">
-                                <td class="px-4 py-3">
-                                    <div class="flex items-center text-sm">
-                                        <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
-                                            <img src="../icons/home.svg" alt="" srcset="">
-                                        </div>
-                                        <div >
-                                            <p class="font-semibold">produit</p>
-                                            <p class="text-xs text-ngray ">vategory</p>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="px-4 py-3">test</td>
-                                <td class="px-4 py-3">test</td>
-                                <td class="px-4 py-3">test</td>
-                            </tr>
-                            <tr class="text-dgray">
-                                <td class="px-4 py-3">
-                                    <div class="flex items-center text-sm">
-                                        <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
-                                            <img src="../icons/home.svg" alt="" srcset="">
-                                        </div>
-                                        <div >
-                                            <p class="font-semibold">produit</p>
-                                            <p class="text-xs text-ngray ">vategory</p>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="px-4 py-3">test</td>
-                                <td class="px-4 py-3">test</td>
-                                <td class="px-4 py-3">test</td>
-                            </tr>
-                            <tr class="text-dgray">
-                                <td class="px-4 py-3">
-                                    <div class="flex items-center text-sm">
-                                        <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
-                                            <img src="../icons/home.svg" alt="" srcset="">
-                                        </div>
-                                        <div >
-                                            <p class="font-semibold">produit</p>
-                                            <p class="text-xs text-ngray ">vategory</p>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="px-4 py-3">test</td>
-                                <td class="px-4 py-3">test</td>
-                                <td class="px-4 py-3">test</td>
-                            </tr>
-                            <tr class="text-dgray">
-                                <td class="px-4 py-3">
-                                    <div class="flex items-center text-sm">
-                                        <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
-                                            <img src="../icons/home.svg" alt="" srcset="">
-                                        </div>
-                                        <div >
-                                            <p class="font-semibold">produit</p>
-                                            <p class="text-xs text-ngray ">vategory</p>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="px-4 py-3">test</td>
-                                <td class="px-4 py-3">test</td>
-                                <td class="px-4 py-3">test</td>
-                            </tr>
-                            <tr class="text-dgray">
-                                <td class="px-4 py-3">
-                                    <div class="flex items-center text-sm">
-                                        <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
-                                            <img src="../icons/home.svg" alt="" srcset="">
-                                        </div>
-                                        <div >
-                                            <p class="font-semibold">produit</p>
-                                            <p class="text-xs text-ngray ">vategory</p>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="px-4 py-3">test</td>
-                                <td class="px-4 py-3">test</td>
-                                <td class="px-4 py-3">test</td>
-                            </tr>
-                            <tr class="text-dgray">
-                                <td class="px-4 py-3">
-                                    <div class="flex items-center text-sm">
-                                        <div class="relative hidden w-8 h-8 mr-3 rounded-full md:block">
-                                            <img src="../icons/home.svg" alt="" srcset="">
-                                        </div>
-                                        <div >
-                                            <p class="font-semibold">produit</p>
-                                            <p class="text-xs text-ngray ">vategory</p>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="px-4 py-3">test</td>
-                                <td class="px-4 py-3">test</td>
-                                <td class="px-4 py-3">test</td>
-                            </tr>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
                         </tbody>
                     </table>
                 </div>

@@ -20,7 +20,7 @@
             <li><a href="arrivals.php">New Arrival</a></li>
             <li><a href="features.php">Features</a></li>
             <li><a href="BLOG.php">Blog</a></li>
-            <li><a href="#" id="open-form-container">contact</a></li>
+            <li><a href="test2.php" id="open-form-container">contact</a></li>
             <!-- <li><a href="form.php">Contact</a></li> -->
         </ul>
         <div class="icons">
