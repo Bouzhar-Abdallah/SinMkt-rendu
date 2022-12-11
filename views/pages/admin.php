@@ -30,21 +30,21 @@
     <div class="sticky top-0 w-64 py-4 h-full text-dgray shadow-md bg-white">
         
         <ul >
-            <li class="relative px-6 py-3">
+            <li class="relative px-6 py-3 bg-worange">
                 <a href="" class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                    <img src="../icons/home.svg" alt="" class="w-5 h-5">
+                    <img src="../icons/arrivals.svg" alt="" class="w-5 h-5">
                     <span class="ml-4">new arrivals</span>
                 </a>
             </li>
-            <li class="relative px-6 py-3">
+            <li class="relative px-6 py-3 bg-worange">
                 <a href="" class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                    <img src="../icons/home.svg" alt="" class="w-5 h-5">
-                    <span class="ml-4">Features</span>
+                    <img src="../icons/featured.svg" alt="" class="w-5 h-5">
+                    <span class="ml-4">Featured</span>
                 </a>
             </li>
-            <li class="relative px-6 py-3">
+            <li class="relative px-6 py-3 bg-worange">
                 <a href="" class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
-                    <img src="../icons/home.svg" alt="" class="w-5 h-5">
+                    <img src="../icons/blog.svg" alt="" class="w-5 h-5">
                     <span class="ml-4">Blog</span>
                 </a>
             </li>
@@ -131,6 +131,14 @@
                         </thead>
                         <tbody class="bg-white divide-y ">
                             
+                            <?php 
+                            if (isset($_GET["a"])) {
+                                if ($_GET["a"] === 'newProductLine') {
+                                    require_once  "newProductLine.php";
+
+                                }
+                            }
+                            ?>
                             
                             <tr class="text-dgray">
                                 <td class="px-4 py-3">
@@ -150,7 +158,9 @@
                                 <td class="px-4 py-3">
                                     <div class="flex items-center space-x-4 text-sm">
                                         <div class=" w-6 h-6  rounded-full md:block">
-                                            <img src="../icons/add2.svg" alt="" srcset="">
+                                            <a href="<?php echo $_SERVER["PHP_SELF"] ?>?a=newProductLine">
+                                                <img src="../icons/add2.svg" alt="" srcset="">
+                                            </a>
                                         </div>
                                         <div class=" w-6 h-6  rounded-full md:block">
                                             <img src="../icons/edit2.svg" alt="" srcset="">
@@ -162,68 +172,7 @@
                                     </div></td>
                             </tr>
 
-                            <tr class="text-dgray">
-                                <!-- add -->
-                                <form action="test2.php" id="productInfo" name="productInfo" method="post" enctype="multipart/form-data">
-                                <td class="px-4 py-3">
-                                    <div class="flex items-center text-sm">
-                                        <div class="relative w-12 h-12 mr-3 rounded-lg md:block">
-                                            <label class="cursor-pointer" for="image">
-                                                <img src="../icons/upload.svg" alt="" srcset="">
-                                            </label>
-                                            <input type="file" class="hidden" name="image" id="image">
-                                        </div>
-                                        <div class="flex flex-col gap-y-2" >
-                                            
-                                        <input name="produit" class="rounded-lg p-1 w-full border-solid drop-shadow-md " placeholder="nom produit" type="text">
-                                        <input name="categorie" class="rounded-lg p-1 w-full border-solid drop-shadow-md " placeholder="categorie" type="text">
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="px-4 py-3">
-                                    <input name="prix" class="rounded-lg p-1 w-full border-solid drop-shadow-md " placeholder="prix" type="number">
-                                </td>
-                                <td class="px-4 py-3">
-                                    <input name="quantite" class="rounded-lg p-1 w-full border-solid drop-shadow-md " placeholder="quantité" type="number">
-                                </td>
-                                <td class="px-4 py-3 h-20">
-                                    <div class="form-group">
-                                      <textarea class="p-1 form-control rounded-lg w-full border-solid drop-shadow-md " name="" id="" placeholder="description" rows="3"></textarea>
-                                    </div>
-                                    
-                                </td>
-                                <td class="px-4 py-3">
-                                    <div class="flex items-center space-x-4 text-sm">
-                                        
-                                        <button class=" w-6 h-6  rounded-lg md:block" form="productInfo" type="submit">
-                                            <img src="../icons/save.svg" alt="" srcset="">
-                                        </button>
-                                        
-                                        <div class=" w-6 h-6  rounded-lg md:block">
-                                            <img src="../icons/cancel.svg" alt="" srcset="">
-                                        </div>
-                                        
-                                        
-                                    </div>
-                                </td>
-                            <!-- end add -->
-                            
-                            </form>
-                            </tr>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
+
                         </tbody>
                     </table>
                 </div>
