@@ -6,7 +6,9 @@
         header('Location: home.php');
     }
  } 
-
+ include_once "../../classes/Control/Control.class.php";
+ $control = new Control();
+ $itemsList = $control->listItems('newArrivals');
 ?>
 
 <!doctype html>
@@ -116,6 +118,8 @@
                 </div>
                 
             </div>
+
+
             <!-- table -->
             <div class="w-full overflow-hidden rounded-lg shadow-md">
                 <div class="w-full overflow-x-auto">
@@ -139,22 +143,24 @@
                                 }
                             }
                             ?>
-                            
+                            <?php foreach($itemsList as $key=>$value){ ?>
                             <tr class="text-dgray">
                                 <td class="px-4 py-3">
                                     <div class="flex items-center text-sm">
                                         <div class="relative hidden w-12 h-12 mr-3 rounded-full md:block">
-                                            <img src="../images/collection/arrivals1.png" alt="" srcset="">
+                                            <!-- <img src="../images/collection/arrivals1.png" alt="" srcset=""> -->
+                                            
+                                            <?php echo '<img src="data:image/jpeg;base64,'. base64_encode($value["image"]) .'" />'; ?>
                                         </div>
                                         <div >
-                                            <p class="font-semibold">produit</p>
-                                            <p class="text-xs text-ngray ">vategory</p>
+                                            <p class="font-semibold"><?php echo $value["nom"] ?></p>
+                                            <p class="text-xs text-ngray "><?php echo $value["categorie"] ?></p>
                                         </div>
                                     </div>
                                 </td>
-                                <td class="px-4 py-3">test</td>
-                                <td class="px-4 py-3">test</td>
-                                <td class="px-4 py-3 h-20">Lorem ipsum dolor si</td>
+                                <td class="px-4 py-3"><?php echo $value["prix"] ?> $</td>
+                                <td class="px-4 py-3"><?php echo $value["quantite"] ?></td>
+                                <td class="px-4 py-3 h-20"><?php echo $value["description"] ?></td>
                                 <td class="px-4 py-3">
                                     <div class="flex items-center space-x-4 text-sm">
                                         <div class=" w-6 h-6  rounded-full md:block">
@@ -171,7 +177,7 @@
                                         
                                     </div></td>
                             </tr>
-
+                        <?php } ?>
 
                         </tbody>
                     </table>

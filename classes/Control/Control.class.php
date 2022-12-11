@@ -15,6 +15,7 @@ class Control {
         
         $payLoad['nom'] = $_POST["produit"];
         $payLoad['prix'] = $_POST["prix"];
+        $payLoad['prix'] = $_POST["quantite"];
         $payLoad['description']= $_POST["description"];
         $payLoad['categorie'] = $_POST["categorie"];
         $payLoad['image'] = file_get_contents($_FILES['image']['tmp_name']);
@@ -24,27 +25,21 @@ class Control {
         return;
     }
 
-
-    public function newClubForm(){
-        require_once PROJ_DIR . "/views/pages/create.php";
+    public function delete(){
+        $choice = $_GET['c'];
+        $id=$_GET['id'];
+        $this->model->delete($choice,$id);
+        header('Location: admin.php');
     }
 
-    public function ClubForm(){
-        $id = intval($_GET["id"]);
-        $membresCount = $this->model->getClubMembersCount($id);
+    public function listItems($choice){
         
-        //Get one club
-        $club = $this->model->getClub($id);
-        if (isset($club['rep'])) {
-            $repName = $this->model->getClubRepName($id);
-        }else {
-            $repName = 'no rep';
-        }
-        
-        require_once PROJ_DIR . "/views/pages/showclub.php";
-        return;
+        return $this->model->listItems($choice);
     }
-   
+
+
+
+
     public function edit(){
         $id = intval($_GET["id"]);
         //Get one club
@@ -80,10 +75,6 @@ class Control {
         $this->model->updateClub($nom,$description,$id,$newrepID,$fileDestination);
         /* var_dump($_POST); */
         header("Location: index.php?c=clubs&a=clubForm&id=$id"); 
-    }
-    public function delete(){
-        $id=$_GET['id'];
-        $this->model->delete($id);
     }
     public function test(){
         $test= $this->model->getClubMembersCount(1);

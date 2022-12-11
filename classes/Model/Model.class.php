@@ -8,12 +8,19 @@ class Model extends dbh{
         return $stmt->execute([$payLoad['nom'],$payLoad['prix'],$payLoad['description'],$payLoad['categorie'],$payLoad['image']]);
     }
 
-    public function listClubs(){
-        $sql = "select * from club";
+    public function delete($choice,$id){
+
+            $sql = "delete from $choice where id_$choice=$id";
+            $stmt = $this->connect()->prepare($sql);
+            $stmt->execute();
+            
+    }
+    public function listItems($choice){
+        $sql = "select * from $choice";
         $stmt = $this->connect()->prepare($sql);
         $stmt->execute();
         
-       return $stmt;
+       return $stmt->fetchAll();
             /* 0=>["id"=>1, "name"=>"club1"],
             1=>["id"=>2, "name"=>"club2"], */
     }
@@ -104,13 +111,6 @@ class Model extends dbh{
         return $clubMembers;
     }
     
-    public function delete($id){
-
-            $sql = "delete from club where id=$id";
-            $stmt = $this->connect()->prepare($sql);
-            $stmt->execute();
-            header('Location: ./index.php');
-    }
 
     public function updateClub($nom,$description,$id,$newrepID,$fileDestination){
 

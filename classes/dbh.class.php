@@ -3,7 +3,7 @@ class Dbh {
     private $host = "localhost";
     private $user = "root";
     private $pwd = "root";
-    private $dbName = "sinmkt1";
+    private $dbName = "sinmkt2";
  
     public function connect(){
         $dsn = 'mysql:host='.$this->host.';dbname='. $this->dbName;
