@@ -5,7 +5,10 @@
      if ($_SESSION["login"] !== 'admin') {
         header('Location: home.php');
     }
- } 
+ }
+ $id=0;
+$choice = basename(__FILE__, 'a.php');
+ if(isset($_GET['id']))$id = $_GET['id'];
  include_once "../../classes/Control/Control.class.php";
  $control = new Control();
  $itemsList = $control->listItems('features');
@@ -130,101 +133,21 @@
                         </thead>
                         <tbody class="bg-white divide-y ">
                             
-                            <?php 
+                        <?php 
                             if (isset($_GET["a"])) {
                                 if ($_GET["a"] === 'newProductLine') {
-                                    
-                                    echo '<tr class="text-dgray">
-                                    <!-- add -->
-                                    <form action="../pages/?c=features&a=saveNew" id="productInfo" name="productInfo" method="post" enctype="multipart/form-data">
-                                    <td class="px-4 py-3">
-                                        <div class="flex items-center text-sm">
-                                            <div class="relative w-12 h-12 mr-3 rounded-lg md:block">
-                                                <label class="cursor-pointer" for="image">
-                                                    <img src="../icons/upload.svg" alt="" srcset="">
-                                                </label>
-                                                <input type="file" class="hidden" required name="image" id="image">
-                                            </div>
-                                            <div class="flex flex-col gap-y-2" >
-                                                
-                                            <input name="produit" class="rounded-lg p-1 w-full border-solid drop-shadow-md " placeholder="nom produit" type="text">
-                                            <input name="categorie" class="rounded-lg p-1 w-full border-solid drop-shadow-md " placeholder="categorie" type="text">
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="px-4 py-3">
-                                        <input name="prix" class="rounded-lg p-1 w-full border-solid drop-shadow-md " placeholder="prix" type="number">
-                                    </td>
-                                    <td class="px-4 py-3">
-                                        <input name="quantite" class="rounded-lg p-1 w-full border-solid drop-shadow-md " placeholder="quantité" type="number">
-                                    </td>
-                                    <td class="px-4 py-3 h-20">
-                                        <div class="form-group">
-                                          <textarea class="p-1 form-control rounded-lg w-full border-solid drop-shadow-md " name="description" id="" placeholder="description" rows="3"></textarea>
-                                        </div>
-                                        
-                                    </td>
-                                    <td class="px-4 py-3">
-                                        <div class="flex items-center space-x-4 text-sm">
-                                            
-                                            <button class=" w-6 h-6  rounded-lg md:block" form="productInfo" type="submit">
-                                                <img src="../icons/save.svg" alt="" srcset="">
-                                            </button>
-                                            
-                                            <div class=" w-6 h-6  rounded-lg md:block">
-                                                <a href="?a=cancel">
-                                                <img src="../icons/cancel.svg" alt="" srcset="">
-                                                </a>
-                                            </div>
-                                            
-                                            
-                                        </div>
-                                    </td>
-                                <!-- end add -->
-                                
-                                </form>
-                                </tr>';
+                                    require_once 'newProductLine.php' ;
 
                                 }
                             }
                             ?>
-                            <?php foreach($itemsList as $key=>$value){ ?>
-                            <tr class="text-dgray">
-                                <td class="px-4 py-3">
-                                    <div class="flex items-center text-sm">
-                                        <div class="relative hidden w-12 h-12 mr-3 rounded-full md:block">
-                                            <!-- <img src="../images/collection/arrivals1.png" alt="" srcset=""> -->
-                                            
-                                            <?php echo '<img src="data:image/jpeg;base64,'. base64_encode($value["image"]) .'" />'; ?>
-                                        </div>
-                                        <div >
-                                            <p class="font-semibold"><?php echo $value["nom"] ?></p>
-                                            <p class="text-xs text-ngray "><?php echo $value["categorie"] ?></p>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="px-4 py-3"><?php echo $value["prix"] ?> $</td>
-                                <td class="px-4 py-3"><?php echo $value["quantite"] ?></td>
-                                <td class="px-4 py-3 h-20"><?php echo $value["description"] ?></td>
-                                <td class="px-4 py-3">
-                                    <div class="flex items-center space-x-4 text-sm">
-                                        <div class=" w-6 h-6  rounded-full md:block">
-                                            <a href="<?php echo $_SERVER["PHP_SELF"] ?>?a=newProductLine">
-                                                <img src="../icons/add2.svg" alt="" srcset="">
-                                            </a>
-                                        </div>
-                                        <div class=" w-6 h-6  rounded-full md:block">
-                                            <img src="../icons/edit2.svg" alt="" srcset="">
-                                        </div>
-                                        <div class=" w-6 h-6   rounded-full md:block">
-                                            <a href="index.php<?php echo '?c='.basename(__FILE__, 'a.php').'&a=delete&id='.$value["id_features"] ?>">
-                                                <img src="../icons/delete2.svg" alt="" srcset="">
-                                            </a>
-                                        </div>
-                                        
-                                    </div></td>
-                            </tr>
-                        <?php } ?>
+                            <?php foreach($itemsList as $key=>$value){ 
+                                if ($value["id_features"]=== $id) {
+                                    require_once 'updateProduct.php' ;
+                                }else {
+                                    require 'showLine.php' ;
+                                }
+                            } ?>
 
                         </tbody>
                     </table>

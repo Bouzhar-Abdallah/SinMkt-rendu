@@ -24,12 +24,12 @@
                                         </div>
                                         <div class=" w-6 h-6  rounded-full md:block">
                                             
-                                            <a href="<?php echo $_SERVER["PHP_SELF"] ?>?a=updateProduct&id=<?php echo $value["id_newArrivals"] ?>">
+                                            <a href="<?php echo $_SERVER["PHP_SELF"] ?>?a=updateProduct&id=<?php echo $value["id_$choice"] ?>">
                                                 <img src="../icons/edit2.svg" alt="" srcset="">
                                             </a>
                                         </div>
                                         <div class=" w-6 h-6   rounded-full md:block">
-                                        <a href="index.php<?php echo '?c='.$choice.'&a=delete&id='.$value["id_newArrivals"] ?>">
+                                        <a href="index.php<?php echo '?c='.$choice.'&a=delete&id='.$value["id_$choice"] ?>">
                                                 <img src="../icons/delete2.svg" alt="" srcset="">
                                             </a>
                                         </div>
