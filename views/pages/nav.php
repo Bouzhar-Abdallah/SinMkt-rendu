@@ -17,7 +17,7 @@
                 <figure class="line"></figure>
             </div>
             <li class="" ><a href="home.php">home</a></li>
-            <li><a href="arrivals.php">New Arrival</a></li>
+            <li><a href="newArrivals.php">New Arrival</a></li>
             <li><a href="features.php">Features</a></li>
             <li><a href="BLOG.php">Blog</a></li>
             <li><a href="test2.php" id="open-form-container">contact</a></li>
@@ -48,7 +48,7 @@
     <ul class="titles-mobile" id="titles-mobile">
        
         <li><a href="index.php">Home</a></li>
-        <li><a href="arrivals.php">New Arrival</a></li>
+        <li><a href="newArrivals.php">New Arrival</a></li>
         <li><a href="features.php">Features</a></li>
         <li><a href="BLOG.php">Blog</a></li>
         <li><a href="#" >Contact</a></li>
