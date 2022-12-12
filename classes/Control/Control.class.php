@@ -15,7 +15,7 @@ class Control {
         
         $payLoad['nom'] = $_POST["produit"];
         $payLoad['prix'] = $_POST["prix"];
-        $payLoad['prix'] = $_POST["quantite"];
+        $payLoad['quantite'] = $_POST["quantite"];
         $payLoad['description']= $_POST["description"];
         $payLoad['categorie'] = $_POST["categorie"];
         $payLoad['image'] = file_get_contents($_FILES['image']['tmp_name']);
@@ -40,10 +40,31 @@ class Control {
         $choice = $_GET['c'];
         header('Location: ../'.$choice.'a.php');
     }
+    public function update(){
+        $choice = $_GET['c'];
+        $id = $_GET['id'];
+        
+        $payLoad['nom'] = $_POST["produit"];
+        $payLoad['prix'] = $_POST["prix"];
+        $payLoad['quantite'] = $_POST["quantite"];
+        $payLoad['description']= $_POST["description"];
+        $payLoad['categorie'] = $_POST["categorie"];
+        if (!empty($_FILES['image']['tmp_name'])) {
+            $payLoad['image'] = file_get_contents($_FILES['image']['tmp_name']);
+        }else {
+            $payLoad['image'] = '$_POST["images"]';
+        }
+        var_dump($_POST["images"]);
+        $this->model->update($choice,$payLoad,$id);
+        header('Location: '.$choice.'a.php');
+        return;
+    }
 
 
 
 
+
+    /* ++++++ */
     public function edit(){
         $id = intval($_GET["id"]);
         //Get one club

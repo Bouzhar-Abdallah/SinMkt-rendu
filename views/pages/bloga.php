@@ -29,12 +29,34 @@
     <?php require_once 'nav.php' ?>
  
 <div class="flex fixed top-0 pt-14 h-screen  w-full">
-    <?php require_once 'adminnav.php' ?>
+<div class="sticky top-0 w-64 py-4 h-full text-dgray shadow-md bg-white">
+        
+        <ul >
+            <li class="relative px-6 py-3 ">
+                <a href="index.php/?c=newArrivals&a=show" class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
+                    <img src="../icons/arrivals.svg" alt="" class="w-5 h-5">
+                    <span class="ml-4">new arrivals</span>
+                </a>
+            </li>
+            <li class="relative px-6 py-3 ">
+                <a href="index.php/?c=features&a=show" class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
+                    <img src="../icons/featured.svg" alt="" class="w-5 h-5">
+                    <span class="ml-4">Features</span>
+                </a>
+            </li>
+            <li class="relative px-6 py-3 bg-worange">
+                <a href="index.php/?c=blog&a=show" class="inline-flex items-center w-full text-sm font-semibold transition-colors duration-150 hover:text-gray-800 dark:hover:text-gray-200">
+                    <img src="../icons/blog.svg" alt="" class="w-5 h-5">
+                    <span class="ml-4">Blog</span>
+                </a>
+            </li>
+        </ul>
+    </div>
     <!-- left bar end -->
     <div class=" w-full h-full overflow-scroll overflow-y-auto">
         <div class="container w-full px-6 mx-auto grid">
-            <h1 class="my-6 text-2xl font-semibold text-gray-700 ">
-                dashboard
+            <h1 class="my-6 text-2xl capitalize font-semibold text-gray-700 ">
+                <?php echo basename(__FILE__, 'a.php')?> dashboard
             </h1>
             <div class="grid gap-6 mb-8 md:grid-cols-2 xl:grid-cols-4">
                 <div class="flex items-center p-4 bg-white rounded-lg shadow-md">
