@@ -31,7 +31,7 @@
                     if(isset($_SESSION["login"])){
                         if($_SESSION["login"] === 'admin') 
                         {
-                            echo '<a href="admin.php"><i class="fa-solid fa-gear"></i></a>
+                            echo '<a href="index.php"><i class="fa-solid fa-gear"></i></a>
                             
                             <a href="../../index.php?a=logout"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>';
                         }

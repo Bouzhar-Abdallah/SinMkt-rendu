@@ -19,15 +19,15 @@ $ctl = new Control();
                     $control->$action();
                 }
         }else{
-            header('Location: index.php');
+            header('Location: newArrivalsa.php');
         }
     }
  }
 
-if (isset($_GET["a"])) {
+/* if (isset($_GET["a"])) {
     if ($_GET["a"] === 'cancel') {
         header('Location: admin.php');
     }
  }else {
     header('Location: home.php');
-}
+} */

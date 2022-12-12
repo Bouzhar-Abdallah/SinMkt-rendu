@@ -21,7 +21,7 @@ class Control {
         $payLoad['image'] = file_get_contents($_FILES['image']['tmp_name']);
         
         $this->model->saveNew($choice,$payLoad);
-        header('Location: admin.php');
+        header('Location: '.$choice.'a.php');
         return;
     }
 
@@ -29,12 +29,16 @@ class Control {
         $choice = $_GET['c'];
         $id=$_GET['id'];
         $this->model->delete($choice,$id);
-        header('Location: admin.php');
+        header('Location: '.$choice.'a.php');
     }
 
     public function listItems($choice){
         
         return $this->model->listItems($choice);
+    }
+    public function show(){
+        $choice = $_GET['c'];
+        header('Location: ../'.$choice.'a.php');
     }
 
 
