@@ -27,11 +27,14 @@ $itemsList = $control->listItems($choice);
 <body>
    
 <?php require_once 'nav.php' ?>
-    <section>
+    <div class="w-full pt-24 px-4 h-full bg-worange">
+        <div class="grid gap-6 mb-8 md:grid-cols-2 xl:grid-cols-4">
     <?php foreach($itemsList as $key=>$value){ ?>
-        <div class="feature">
+        <div class="mx-auto p-2 bg-white shadow-md hover:bg-norange">
+            <div class="">
         <?php echo '<img src="data:image/jpeg;base64,'. base64_encode($value["image"]) .'" />'; ?>
-            <div class="info">
+            </div>
+            <div class="bg-white p-2">
                 <div class="rating">
                     <div class="stars">
                         
@@ -46,12 +49,14 @@ $itemsList = $control->listItems($choice);
                 <h3 class="name"><?php echo $value["nom"]; ?></h3>
                 <h3 class="price"><?php echo $value["prix"]; ?> $</h3>
             </div>
-        </div>
+            </div>
+            
         <?php } ?>   
-
+        </div>
+        </div>
         
        
-    </section> 
+    </div class=""> 
     
     <div class="clients">
         <figure><img src="../images/clients/c1.png" alt="" srcset=""></figure>

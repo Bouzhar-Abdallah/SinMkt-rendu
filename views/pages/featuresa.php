@@ -31,7 +31,7 @@ $choice = basename(__FILE__, 'a.php');
   <body>
     <?php require_once 'nav.php' ?>
  
-<div class="flex fixed top-0 pt-14 h-screen  w-full">
+<div class="flex fixed top-0 pt-14 h-screen  w-full bg-worange">
 <div class="sticky top-0 w-64 py-4 h-full text-dgray shadow-md bg-white">
         
         <ul >

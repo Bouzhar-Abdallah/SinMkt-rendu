@@ -59,15 +59,7 @@
             </a>
         </div>
     </nav>
-    <ul class="titles-mobile" id="titles-mobile">
-       
-        <li><a href="index.php">Home</a></li>
-        <li><a href="newArrivals.php">New Arrival</a></li>
-        <li><a href="features.php">Features</a></li>
-        <li><a href="BLOG.php">Blog</a></li>
-        <li><a href="#" >Contact</a></li>
-        <!-- <li><a href="form.html">Contact</a></li> -->
-    </ul>
+    
 
 <?php 
 if(isset($_GET['a'])){
