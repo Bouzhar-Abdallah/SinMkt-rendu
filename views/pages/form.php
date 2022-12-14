@@ -7,8 +7,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a26b51a86d.js" crossorigin="anonymous"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="form.css">
-    <link rel="stylesheet" href="BLOG.css">
+<!--     <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="BLOG.css"> -->
     <title>Contact</title>
 </head>
 <body>

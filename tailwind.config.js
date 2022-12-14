@@ -13,10 +13,15 @@ module.exports = {
       'wgray': '#F8F9FC',
       'dgray': '#444545',
       },
-      /* shadow: {
-        'xs': '0 0 0 1px rgba(0 0 0 / 5%))',
-      } */
+      
     },
+    variants:{
+      extend:{
+        display:['group-focus'],
+        opacity:['group-focus'],
+        inset:['group-focus']
+      }
+    }
   },
   plugins: [],
 }
