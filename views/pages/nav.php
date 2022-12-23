@@ -5,7 +5,7 @@
         
     } 
     ?>
-    <nav class="h-14 flex w-full fixed z-50 justify-between items-center bg-worange drop-shadow-md">
+    <nav class="h-14 flex w-full fixed top-0 z-50 justify-between items-center bg-worange drop-shadow-md">
         <!-- humburger -->
         <button class="block md:hidden py-3 px-4 mx-2 hover:bg-wgray rounded group">
             <div class="w-5 h-1 bg-dorange mb-1"></div>

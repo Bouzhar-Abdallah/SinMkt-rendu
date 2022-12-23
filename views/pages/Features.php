@@ -18,6 +18,7 @@ $itemsList = $control->listItems($choice);
     <script src="https://kit.fontawesome.com/a26b51a86d.js" crossorigin="anonymous"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" href="../assets/features.css">
     <!-- <link rel="stylesheet" href="../assets/features.css"> -->
     <script src="https://cdn.tailwindcss.com"></script>
     <meta name="keywords" content="sinmkt Le n° 1 du mobilier et de la décoration au Maroc. Meubles, décoration, ameublement, chaise, table, lit, chambre à coucher, fauteuil, salon, canapé.">
@@ -34,20 +35,20 @@ $itemsList = $control->listItems($choice);
             <div class="">
         <?php echo '<img src="data:image/jpeg;base64,'. base64_encode($value["image"]) .'" />'; ?>
             </div>
-            <div class="bg-white p-2">
-                <div class="rating">
-                    <div class="stars">
-                        
+            <div class=" p-2">
+                <div class="flex justify-between">
+                    <div class=""><p>reviews</p></div>
+                    <div class="">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-regular fa-star"></i>
                     </div>
-                    <div class="reviews"><p>reviews</p></div>
+                    
                 </div>
-                <h3 class="name"><?php echo $value["nom"]; ?></h3>
-                <h3 class="price"><?php echo $value["prix"]; ?> $</h3>
+                <h3 class=""><?php echo $value["nom"]; ?></h3>
+                <h3 class=""><?php echo $value["prix"]; ?> $</h3>
             </div>
             </div>
             

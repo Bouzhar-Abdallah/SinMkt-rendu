@@ -7,6 +7,7 @@
     <title>Home</title>
     
     <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" href="../assets/style-home-copy.css">
  
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,7 +23,7 @@
     
 <?php require_once 'nav.php' ?>
 
-    <div class="slider-section">
+    <div class="slider-section pt-8">
         <figure>
             <div class="slider">
             <div class="slider-top">
