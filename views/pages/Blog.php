@@ -21,7 +21,7 @@
 <body>
    
 <?php require_once 'nav.php' ?>
-    <section>
+    <section class="mt-20" >
         <div class="blog">
             <img src="../images/blog/b1.jpg" alt="">
             <div class="text">
