@@ -1,40 +1,15 @@
-<?php 
-$choice = basename(__FILE__, '.php');
 
-include_once "../../classes/Control/Control.class.php";
-$control = new Control();
-$itemsList = $control->listItems($choice);
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Arrivals</title>
-    <link rel="stylesheet" href="form.css"><link rel="stylesheet" href="form.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a26b51a86d.js" crossorigin="anonymous"></script>
-    
-    <link rel="stylesheet" href="../assets/style-arrivals.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <meta name="keywords" content="sinmkt Le n° 1 du mobilier et de la décoration au Maroc. Meubles, décoration, ameublement, chaise, table, lit, chambre à coucher, fauteuil, salon, canapé.">
-			<meta name="description" content="Bienvenue chez sinmkt. Découvrez des meubles abordables et des idées d’aménagement intérieur pour des logements et portefeuilles de toutes tailles. Faites vos achats en ligne ou trouvez un magasin près de chez vous.">
-    </head>
-</head>
-<body>
+
+    <link rel="stylesheet" href="<?= ROOT ?>assets/style-arrivals.css">
+
    
-    
- 
-        <?php require_once 'nav.php' ?>
 
     <div class="section-wrapper">
     <section>
 
         
         
-       <?php foreach($itemsList as $key=>$value){ ?>
+       <?php foreach($data as $key=>$value){ ?>
         <div  class="content">
             <div class="image">
             <?php echo '<img src="data:image/jpeg;base64,'. base64_encode($value["image"]) .'" />'; ?>
@@ -54,11 +29,11 @@ $itemsList = $control->listItems($choice);
     </section>
 </div>
 <div class="clients">
-    <figure><img src="../images/clients/c1.png" alt="" srcset=""></figure>
-    <figure><img src="../images/clients/c2.png" alt="" srcset=""></figure>
-    <figure><img src="../images/clients/c3.png" alt="" srcset=""></figure>
-    <figure><img src="../images/clients/c4.png" alt="" srcset=""></figure>
-    <figure><img src="../images/clients/c5.png" alt="" srcset=""></figure>
+    <figure><img src="<?= ROOT ?>assets/images/clients/c1.png" alt="" srcset=""></figure>
+    <figure><img src="<?= ROOT ?>assets/images/clients/c2.png" alt="" srcset=""></figure>
+    <figure><img src="<?= ROOT ?>assets/images/clients/c3.png" alt="" srcset=""></figure>
+    <figure><img src="<?= ROOT ?>assets/images/clients/c4.png" alt="" srcset=""></figure>
+    <figure><img src="<?= ROOT ?>assets/images/clients/c5.png" alt="" srcset=""></figure>
 </div>
     <div class="pseudo-footer">
         <div class="information">
@@ -102,6 +77,5 @@ $itemsList = $control->listItems($choice);
     </footer>
 
     
-</body>
-</html>
+
 <script src="./script.js"></script>

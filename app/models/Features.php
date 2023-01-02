@@ -1,6 +1,6 @@
 <?php
 
-class User extends Model
+class Features extends Model
 {
     //protected $table = 'user';
 

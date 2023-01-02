@@ -22,7 +22,7 @@ class Model extends Database
     public function findAll()
     {
 
-        $query = " select * from $this->table order by $this->order_column $this->order_type limit $this->limit offset $this->offset";
+        $query = " select * from $this->table limit $this->limit offset $this->offset";
 
         return $this->query($query);
     }

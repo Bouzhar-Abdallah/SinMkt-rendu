@@ -18,11 +18,11 @@
                 <figure class="line"></figure>
                 <figure class="line"></figure>
             </div>
-            <li class="" ><a href="home.php">home</a></li>
-            <li><a href="newArrivals.php">New Arrival</a></li>
-            <li><a href="features.php">Features</a></li>
-            <li><a href="BLOG.php">Blog</a></li>
-            <li><a href="test2.php" id="open-form-container">contact</a></li>
+            <li class="" ><a href="home">home</a></li>
+            <li><a href="newA">New Arrival</a></li>
+            <li><a href="feat">Features</a></li>
+            <li><a href="BLOG">Blog</a></li>
+            <li><a href="#" id="open-form-container">contact</a></li>
             <!-- <li><a href="form.php">Contact</a></li> -->
         </ul>
         <div class="icons">
@@ -49,10 +49,10 @@
     </nav>
     <ul class="titles-mobile" id="titles-mobile">
        
-        <li><a href="index.php">Home</a></li>
-        <li><a href="newArrivals.php">New Arrival</a></li>
-        <li><a href="features.php">Features</a></li>
-        <li><a href="BLOG.php">Blog</a></li>
+        <li><a href="index">Home</a></li>
+        <li><a href="newArrivals">New Arrival</a></li>
+        <li><a href="features">Features</a></li>
+        <li><a href="BLOG">Blog</a></li>
         <li><a href="#" >Contact</a></li>
         <!-- <li><a href="form.html">Contact</a></li> -->
     </ul>

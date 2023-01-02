@@ -1,6 +1,6 @@
 <?php
 
-class User extends Model
+class NewArrivals extends Model
 {
     //protected $table = 'user';
 
