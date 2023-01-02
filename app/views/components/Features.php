@@ -1,16 +1,16 @@
 
 
-    <link rel="stylesheet" href="<?= ROOT ?>assets/features.css">
-    <link rel="stylesheet" href="<?= ROOT ?>assets/style.css">
+    
     
 
-    <section>
+    <section class="grid grid-cols-4">
     <?php foreach($data as $key=>$value){ ?>
-        <div class="feature">
+        <div class="bg-white shadow-sm hover:bg-orange-300 w-fit mx-auto block m-3 p-1">
         <?php echo '<img src="data:image/jpeg;base64,'. base64_encode($value["image"]) .'" />'; ?>
-            <div class="info">
-                <div class="rating">
-                    <div class="stars">
+            <div class="py-3 px-2">
+                <div class="flex justify-between">
+                    <div class=""><p>reviews</p></div>
+                    <div class="">
                         
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -18,16 +18,12 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-regular fa-star"></i>
                     </div>
-                    <div class="reviews"><p>reviews</p></div>
                 </div>
-                <h3 class="name"><?php echo $value["nom"]; ?></h3>
-                <h3 class="price"><?php echo $value["prix"]; ?> $</h3>
+                <h3 class="text-center"><?php echo $value["nom"]; ?></h3>
+                <h3 class="text-center mt-2"><?php echo $value["prix"]; ?> $</h3>
             </div>
         </div>
         <?php } ?>   
-
-        
-       
     </section> 
     
     <div class="clients">

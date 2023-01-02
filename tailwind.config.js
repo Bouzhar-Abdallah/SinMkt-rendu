@@ -12,14 +12,8 @@ module.exports = {
       'ngray': '#C9C9C9',
       'wgray': '#F8F9FC',
       'dgray': '#444545',
-      },
-      fontFamily: {
-        'sans': ['arial', 'system-ui', ...],
-        'serif': ['ui-serif', 'Georgia', ...],
-        'mono': ['ui-monospace', 'SFMono-Regular', ...],
-        'display': ['Oswald', ...],
-        'body': ['"Open Sans"', ...],
       }
+      
     },
   },
   plugins: [],
