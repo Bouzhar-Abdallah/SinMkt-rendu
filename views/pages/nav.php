@@ -15,10 +15,10 @@
                 <ul class="flex flex-col items-center w-full cursor-pointer pt-10">
                     
                     <a class="w-full" href="home.php">         <li class="text-dorange drop-shadow-md hover:bg-wgray py-4 px-6 w-full" >home</li></a>
-                    <a class="w-full href="newArrivals.php">  <li class="text-dorange drop-shadow-md hover:bg-wgray py-4 px-6 w-full" >New Arrival</li></a>
-                    <a class="w-full href="features.php">     <li class="text-dorange drop-shadow-md hover:bg-wgray py-4 px-6 w-full" >Features</li></a>
-                    <a class="w-full href="BLOG.php">         <li class="text-dorange drop-shadow-md hover:bg-wgray py-4 px-6 w-full" >Blog</li></a>
-                    <a class="w-full href="test2.php">        <li class="text-dorange drop-shadow-md hover:bg-wgray py-4 px-6 w-full" >contact</li></a>
+                    <a class="w-full" href="newArrivals.php">  <li class="text-dorange drop-shadow-md hover:bg-wgray py-4 px-6 w-full" >New Arrival</li></a>
+                    <a class="w-full" href="features.php">     <li class="text-dorange drop-shadow-md hover:bg-wgray py-4 px-6 w-full" >Features</li></a>
+                    <a class="w-full" href="BLOG.php">         <li class="text-dorange drop-shadow-md hover:bg-wgray py-4 px-6 w-full" >Blog</li></a>
+                    <a class="w-full" href="#">        <li class="text-dorange drop-shadow-md hover:bg-wgray py-4 px-6 w-full" >contact</li></a>
                 </ul>
             </div>
             
@@ -38,7 +38,7 @@
             <a href="newArrivals.php">  <li class="text-dorange drop-shadow-md hover:bg-wgray py-4 px-6" >New Arrival</li></a>
             <a href="features.php">     <li class="text-dorange drop-shadow-md hover:bg-wgray py-4 px-6" >Features</li></a>
             <a href="BLOG.php">         <li class="text-dorange drop-shadow-md hover:bg-wgray py-4 px-6" >Blog</li></a>
-            <a href="test2.php">        <li class="text-dorange drop-shadow-md hover:bg-wgray py-4 px-6" >contact</li></a>
+            <a href="#">        <li class="text-dorange drop-shadow-md hover:bg-wgray py-4 px-6" >contact</li></a>
             <!-- <li><a href="form.php">Contact</a></li> -->
         </ul>
         <div class="w-20 flex items-center justify-end px-3 space-x-2">

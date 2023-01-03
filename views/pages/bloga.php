@@ -58,7 +58,7 @@
             <h1 class="my-6 text-2xl capitalize font-semibold text-gray-700 ">
                 <?php echo basename(__FILE__, 'a.php')?> dashboard
             </h1>
-            <div class="grid gap-6 mb-8 md:grid-cols-2 xl:grid-cols-4">
+            <div class="hidden gap-6 mb-8 md:grid-cols-2 xl:grid-cols-4">
                 <div class="flex items-center p-4 bg-white rounded-lg shadow-md">
                     <div class="p-3 mr-4 bg-worange rounded-full dark:text-orange-100 ">
                         <img class="w-5 h-5" src="../icons/home.svg" alt="" srcset="">
