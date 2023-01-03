@@ -7,7 +7,8 @@
                                             <label class="cursor-pointer" for="image">
                                                 <img src="../icons/upload.svg" alt="" srcset="">
                                             </label>
-                                            <input value="<?php $value["image"]; ?>" type="file" class="hidden" name="image" id="image">
+                                            <input type="file" class="hidden" name="image" id="image">
+                                            
                                             
                                             
                                             

@@ -51,58 +51,17 @@ class Control {
         $payLoad['categorie'] = $_POST["categorie"];
         if (!empty($_FILES['image']['tmp_name'])) {
             $payLoad['image'] = file_get_contents($_FILES['image']['tmp_name']);
+            
         }else {
-            $payLoad['image'] = '$_POST["images"]';
+            $payLoad['image'] = '';
+            
         }
-        var_dump($_POST["images"]);
+        
         $this->model->update($choice,$payLoad,$id);
         header('Location: '.$choice.'a.php');
         return;
     }
 
 
-
-
-
-    /* ++++++ */
-    public function edit(){
-        $id = intval($_GET["id"]);
-        //Get one club
-        $club = $this->model->getClub($id);
-        $clubMembers = $this->model->getClubMembersRows($id);
-        require_once PROJ_DIR . "/views/pages/editclub.php";
-    }
-
-    public function save(){
-        $file=$_FILES['logo'];
-        if ($file['error']>0) {
-            $fileDestination=$_POST['logoD'];
-        }else{
-        $file_name = $file['name'];
-        $tem_name = $file['tmp_name'];
-        $fileExt = explode('.', $file_name);
-        $fileExtlowCase = strtolower(end($fileExt));
-        $fileNameToSave = uniqid('',true).".".$fileExtlowCase;
-        $fileDestination = 'views/uploads/'.$fileNameToSave;
-        move_uploaded_file($tem_name,$fileDestination);
-        }
-        
-        /* $logo = $_POST["logo"];  */
-        $nom= $_POST["nom"]; 
-        $description= $_POST["description"]; 
-        
-        if (isset($_POST['newrep'])) {
-            $newrepID = $_POST['newrep'];
-        }else {
-            $newrepID = 0;
-        }
-        $id=$_GET["id"];
-        $this->model->updateClub($nom,$description,$id,$newrepID,$fileDestination);
-        /* var_dump($_POST); */
-        header("Location: index.php?c=clubs&a=clubForm&id=$id"); 
-    }
-    public function test(){
-        $test= $this->model->getClubMembersCount(1);
-        var_dump($test);
-    }
+    
 } 

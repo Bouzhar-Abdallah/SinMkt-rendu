@@ -3,6 +3,7 @@ include_once "../../classes/dbh.class.php";
 class Model extends dbh{
     
     public function saveNew($choice,$payLoad){
+        
         $sql = "insert into $choice (nom,prix,quantite,description,categorie,image) values(?,?,?,?,?,?)";
         $stmt = $this->connect()->prepare($sql);
         return $stmt->execute([$payLoad['nom'],$payLoad['prix'],$payLoad['quantite'],$payLoad['description'],$payLoad['categorie'],$payLoad['image']]);
@@ -23,21 +24,21 @@ class Model extends dbh{
         return $stmt->fetchAll();
     }
     public function update($choice,$payLoad,$id){
-        
-        $sql = "update $choice SET nom=?,prix=?,quantite=?,description=?,categorie=?,image=? where id_$choice=$id ";
-        $stmt = $this->connect()->prepare($sql);
-        return $stmt->execute([$payLoad['nom'],$payLoad['prix'],$payLoad['quantite'],$payLoad['description'],$payLoad['categorie'],$payLoad['image']]);
+        if ($payLoad['image'] == '') {
+            
+            $sql = "update $choice SET nom=?,prix=?,quantite=?,description=?,categorie=? where id_$choice=$id ";
+            $stmt = $this->connect()->prepare($sql);
+            return $stmt->execute([$payLoad['nom'],$payLoad['prix'],$payLoad['quantite'],$payLoad['description'],$payLoad['categorie']]);
+        }else{
+
+            $sql = "update $choice SET nom=?,prix=?,quantite=?,description=?,categorie=?,image=? where id_$choice=$id ";
+            $stmt = $this->connect()->prepare($sql);
+            return $stmt->execute([$payLoad['nom'],$payLoad['prix'],$payLoad['quantite'],$payLoad['description'],$payLoad['categorie'],$payLoad['image']]);
+        }
     }
 
 
-    public function getClub($id){
-        $sql = "select * from club where id=?";
-        $stmt = $this->connect()->prepare($sql);
-        $stmt->execute([$id]);
-        $results = $stmt->fetch();
-        return $results;
-      /*  return $stmt; */
-    }
+   
     
 
     
